@@ -1,0 +1,14 @@
+{
+  "name": "cr-vue-todo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/shgtkshruch/cr-vue-todo-app.git",
+  "author": "shgtkshruch <shgtk.shruch@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
