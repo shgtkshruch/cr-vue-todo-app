@@ -9,7 +9,7 @@ export default {
     todos.forEach(function(todo, index) {
       todo.id = index
     })
-    todoStorage.uid = todos.length
+    this.uid = todos.length
     return todos
   },
   save: function(todos) {
