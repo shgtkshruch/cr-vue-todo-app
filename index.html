@@ -23,10 +23,10 @@
           <th>{{ todo.id }}</th>
           <td>{{ todo.comment }}</td>
           <td class="state">
-            <button>{{ todo.state }}</button>
+            <button @click="changeState(todo)">{{ todo.state }}</button>
           </td>
           <td class="button">
-            <button>削除</button>
+            <button @click="remove(todo)">削除</button>
           </td>
         </tr>
       </tbody>
