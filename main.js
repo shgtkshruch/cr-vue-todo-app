@@ -4,7 +4,7 @@ console.log(localStorage);
 const app = new Vue({
   el: '#app',
   data: {
-
+    todos: [],
   },
   methods: {
 
