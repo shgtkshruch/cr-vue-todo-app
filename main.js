@@ -43,6 +43,11 @@ const app = new Vue({
         return this.current < 0 ? true : this.current === todo.state;
       });
     },
+    labels() {
+      return this.options.reduce((a, b) => {
+        return Object.assign(a, { [b.value]: b.label });
+      }, {});
+    },
   },
   watch: {
     todos: {
