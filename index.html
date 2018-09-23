@@ -8,6 +8,10 @@
 <body>
   <div id="app">
     <!-- 絞り込みラジオボタン -->
+    <label v-for="option in options">
+      <input type="radio" v-model="current" :value="option.value">
+      {{ option.label }}
+    </label>
     <!-- ToDo テーブル -->
     <table>
       <thead>
@@ -19,7 +23,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="todo in todos" :key="todo.id">
+        <tr v-for="todo in filteredTodos" :key="todo.id">
           <th>{{ todo.id }}</th>
           <td>{{ todo.comment }}</td>
           <td class="state">
